@@ -22,7 +22,24 @@
       "delete_calendar_event",
       "read_contacts",
       "search_contacts",
-      "create_contact"
+      "create_contact",
+      "checkOutlookRunning",
+      "restartOutlook",
+      "repairOffice",
+      "createNewProfile",
+      "scanOST",
+      "repairPST",
+      "resetNavigationPane",
+      "disableAddins",
+      "checkExchangeHealth",
+      "checkMailboxPermissions",
+      "testGraphConnection",
+      "dnsDiagnostics",
+      "autodiscoverDiagnostics",
+      "networkDiagnostics",
+      "collectEventViewerLogs",
+      "collectOutlookLogs",
+      "runPowerShellScript"
     ]
   }
 }
