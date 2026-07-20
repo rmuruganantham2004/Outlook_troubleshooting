@@ -1,0 +1,32 @@
+{
+  "name": "openclaw-plugin-outlook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "plugin:build": "npm run build && openclaw plugins build --entry ./dist/index.js",
+    "plugin:validate": "npm run build && openclaw plugins validate --entry ./dist/index.js"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.6.11"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^3.8.0",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "@sinclair/typebox": "^0.34.41",
+    "dotenv": "^17.4.2",
+    "isomorphic-fetch": "^3.0.0",
+    "jwt-decode": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "openclaw": "latest",
+    "typescript": "^5.9.2"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  }
+}

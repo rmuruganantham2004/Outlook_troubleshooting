@@ -1,0 +1,13 @@
+import plugin from "./dist/index.js";
+
+const symbols = Object.getOwnPropertySymbols(plugin);
+
+console.log("Symbols:");
+console.log(symbols);
+
+for (const s of symbols) {
+  console.log(
+    s.toString(),
+    plugin[s]
+  );
+}

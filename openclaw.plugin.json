@@ -1,0 +1,28 @@
+{
+  "id": "outlook",
+  "name": "Outlook",
+  "description": "Microsoft Outlook integration",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "send_outlook_mail",
+      "read_inbox",
+      "read_unread_mail",
+      "search_mail",
+      "read_calendar",
+      "create_calendar_event",
+      "delete_calendar_event",
+      "read_contacts",
+      "search_contacts",
+      "create_contact"
+    ]
+  }
+}
